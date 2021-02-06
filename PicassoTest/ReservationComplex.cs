@@ -6,9 +6,12 @@ namespace PicassoTest
 {
     public class ReservationComplex
     {
-        public User MadeBy { get; set; }
+        public UserComplex MadeBy { get; set; }
+
         public float Price { get; set; }
-        public bool CanBeCancelledBy(User user)
+
+
+        public bool CanBeCancelledBy(UserComplex user)
         {
             if(user.IsAdmin)
             {
@@ -34,19 +37,10 @@ namespace PicassoTest
             if (user.Money >= Price)
             {
                 user.Money -= Price;
-            }
-            else
-            {
-                throw new ArgumentOutOfRangeException();
+                return 0;
             }
 
-
-
-
-
-
-
-                throw new NotImplementedException();
+            return -1;
 
         }
     }
