@@ -34,10 +34,10 @@ namespace PicassoTest
             if (user.Money >= Price)
             {
                 user.Money -= Price;
-            } 
+            }
             else
             {
-                
+                throw new ArgumentOutOfRangeException();
             }
 
 
@@ -46,7 +46,7 @@ namespace PicassoTest
 
 
 
-            throw new NotImplementedException();
+                throw new NotImplementedException();
 
         }
     }
