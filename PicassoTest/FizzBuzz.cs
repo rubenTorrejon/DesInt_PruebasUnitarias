@@ -12,7 +12,6 @@ namespace PicassoTest
         /// </summary>
         /// <param name="number">the integer to get output for</param>
         /// <returns>a string with the proper output as described in the summary</returns>
-        
         public static string GetOutput(int number)
         {
             string output;

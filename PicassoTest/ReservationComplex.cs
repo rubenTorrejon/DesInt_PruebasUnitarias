@@ -7,10 +7,7 @@ namespace PicassoTest
     public class ReservationComplex
     {
         public UserComplex MadeBy { get; set; }
-
         public float Price { get; set; }
-
-
         public bool CanBeCancelledBy(UserComplex user)
         {
             if(user.IsAdmin)
@@ -33,15 +30,12 @@ namespace PicassoTest
         /// <returns>0 if the reservation is paid and the price of the reservation is substracted from the money of the user,</returns>
         public float PayReservation(UserComplex user)
         {
-
             if (user.Money >= Price)
             {
                 user.Money -= Price;
                 return 0;
             }
-
             return -1;
-
         }
     }
 

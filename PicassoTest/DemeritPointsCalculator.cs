@@ -21,7 +21,6 @@ namespace PicassoTest
             var demeritPoints = (speed - SpeedLimit) / kmPerDemeritPoint;
 
             return demeritPoints;
-
         }
     }
     

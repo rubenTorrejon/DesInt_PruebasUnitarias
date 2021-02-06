@@ -18,8 +18,7 @@ namespace PicassoTest
                 return true;
             }
 
-            return false;
-
+            return false
         }
     }
 
